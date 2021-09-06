@@ -1,0 +1,7 @@
+[2021-08-20 06:18:16,346][4497376704][dataset.py][line: 30][INFO] >> reading data from ['../data/toy_train.txt']
+[2021-08-20 06:18:39,942][4758111680][dataset.py][line: 30][INFO] >> reading data from ['/Users/cuixianyun/PycharmProjects/NLG/data/toy_train.txt']
+[2021-08-20 06:18:40,022][4758111680][dataset.py][line: 40][INFO] >> 10000 data record loaded
+[2021-08-20 06:19:08,314][4527371712][dataset.py][line: 30][INFO] >> reading data from ['/Users/cuixianyun/PycharmProjects/NLG/data/toy_train.txt']
+[2021-08-20 06:19:08,391][4527371712][dataset.py][line: 40][INFO] >> 10000 data record loaded
+[2021-08-20 06:19:22,337][4522333632][dataset.py][line: 30][INFO] >> reading data from ['/Users/cuixianyun/PycharmProjects/NLG/data/toy_train.txt']
+[2021-08-20 06:19:22,413][4522333632][dataset.py][line: 40][INFO] >> 10000 data record loaded

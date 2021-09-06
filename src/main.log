@@ -1,0 +1,178 @@
+[2021-09-05 14:37:20,432][4637754816][dataset.py][line: 30][INFO] >> reading data from ['/Users/cuixianyun/PycharmProjects/NLG/src/../data/toy_train.txt']
+[2021-09-05 14:37:20,567][4637754816][dataset.py][line: 40][INFO] >> 10000 data record loaded
+[2021-09-05 14:37:20,568][4637754816][dataset.py][line: 30][INFO] >> reading data from ['/Users/cuixianyun/PycharmProjects/NLG/src/../data/toy_valid.txt']
+[2021-09-05 14:37:20,595][4637754816][dataset.py][line: 40][INFO] >> 2000 data record loaded
+[2021-09-05 14:37:20,595][4637754816][predicate.py][line: 44][INFO] >> Building models
+[2021-09-05 14:37:25,059][4637754816][predicate.py][line: 53][INFO] >> Weights loading from /Users/cuixianyun/PycharmProjects/NLG/src/../train/model-12.ckpt
+[2021-09-05 14:37:36,177][4637754816][predicate.py][line: 59][ERROR] >> Traceback (most recent call last):
+  File "/Users/cuixianyun/PycharmProjects/NLG/src/predicate.py", line 55, in <module>
+    state_dict = torch.load(os.path.join(train_dir, latest_ckpt), map_location=device)
+  File "/Users/cuixianyun/anaconda3/lib/python3.7/site-packages/torch/serialization.py", line 607, in load
+    return _load(opened_zipfile, map_location, pickle_module, **pickle_load_args)
+  File "/Users/cuixianyun/anaconda3/lib/python3.7/site-packages/torch/serialization.py", line 882, in _load
+    result = unpickler.load()
+  File "/Users/cuixianyun/anaconda3/lib/python3.7/site-packages/torch/serialization.py", line 857, in persistent_load
+    load_tensor(data_type, size, key, _maybe_decode_ascii(location))
+  File "/Users/cuixianyun/anaconda3/lib/python3.7/site-packages/torch/serialization.py", line 846, in load_tensor
+    loaded_storages[key] = restore_location(storage, location)
+  File "/Users/cuixianyun/anaconda3/lib/python3.7/site-packages/torch/serialization.py", line 827, in restore_location
+    return default_restore_location(storage, str(map_location))
+  File "/Users/cuixianyun/anaconda3/lib/python3.7/site-packages/torch/serialization.py", line 175, in default_restore_location
+    result = fn(storage, location)
+  File "/Users/cuixianyun/anaconda3/lib/python3.7/site-packages/torch/serialization.py", line 151, in _cuda_deserialize
+    device = validate_cuda_device(location)
+  File "/Users/cuixianyun/anaconda3/lib/python3.7/site-packages/torch/serialization.py", line 135, in validate_cuda_device
+    raise RuntimeError('Attempting to deserialize object on a CUDA '
+RuntimeError: Attempting to deserialize object on a CUDA device but torch.cuda.is_available() is False. If you are running on a CPU-only machine, please use torch.load with map_location=torch.device('cpu') to map your storages to the CPU.
+
+[2021-09-05 14:38:16,427][4519929280][dataset.py][line: 30][INFO] >> reading data from ['/Users/cuixianyun/PycharmProjects/NLG/src/../data/toy_train.txt']
+[2021-09-05 14:38:16,510][4519929280][dataset.py][line: 40][INFO] >> 10000 data record loaded
+[2021-09-05 14:38:16,511][4519929280][dataset.py][line: 30][INFO] >> reading data from ['/Users/cuixianyun/PycharmProjects/NLG/src/../data/toy_valid.txt']
+[2021-09-05 14:38:16,527][4519929280][dataset.py][line: 40][INFO] >> 2000 data record loaded
+[2021-09-05 14:38:16,527][4519929280][predicate.py][line: 44][INFO] >> Building models
+[2021-09-05 14:38:17,445][4519929280][predicate.py][line: 53][INFO] >> Weights loading from /Users/cuixianyun/PycharmProjects/NLG/src/../train/model-12.ckpt
+[2021-09-05 14:46:14,229][4508833216][dataset.py][line: 30][INFO] >> reading data from ['/Users/cuixianyun/PycharmProjects/NLG/src/../data/toy_train.txt']
+[2021-09-05 14:46:14,311][4508833216][dataset.py][line: 40][INFO] >> 10000 data record loaded
+[2021-09-05 14:46:14,312][4508833216][dataset.py][line: 30][INFO] >> reading data from ['/Users/cuixianyun/PycharmProjects/NLG/src/../data/toy_valid.txt']
+[2021-09-05 14:46:14,328][4508833216][dataset.py][line: 40][INFO] >> 2000 data record loaded
+[2021-09-05 14:46:14,328][4508833216][predicate.py][line: 45][INFO] >> Building models
+[2021-09-05 14:46:15,236][4508833216][predicate.py][line: 54][INFO] >> Weights loading from /Users/cuixianyun/PycharmProjects/NLG/src/../train/model-12.ckpt
+[2021-09-05 14:46:15,819][4508833216][predicate.py][line: 77][ERROR] >> Traceback (most recent call last):
+  File "/Users/cuixianyun/PycharmProjects/NLG/src/predicate.py", line 62, in <module>
+    test_data.append(vocab.string2ids(test_text))
+  File "/Users/cuixianyun/PycharmProjects/NLG/src/model/text.py", line 71, in string2ids
+    tokens = string.split()
+AttributeError: 'list' object has no attribute 'split'
+
+[2021-09-05 14:46:44,040][4352366016][dataset.py][line: 30][INFO] >> reading data from ['/Users/cuixianyun/PycharmProjects/NLG/src/../data/toy_train.txt']
+[2021-09-05 14:46:44,123][4352366016][dataset.py][line: 40][INFO] >> 10000 data record loaded
+[2021-09-05 14:46:44,124][4352366016][dataset.py][line: 30][INFO] >> reading data from ['/Users/cuixianyun/PycharmProjects/NLG/src/../data/toy_valid.txt']
+[2021-09-05 14:46:44,139][4352366016][dataset.py][line: 40][INFO] >> 2000 data record loaded
+[2021-09-05 14:46:44,139][4352366016][predicate.py][line: 45][INFO] >> Building models
+[2021-09-05 14:46:45,040][4352366016][predicate.py][line: 54][INFO] >> Weights loading from /Users/cuixianyun/PycharmProjects/NLG/src/../train/model-12.ckpt
+[2021-09-05 14:46:45,639][4352366016][predicate.py][line: 77][ERROR] >> Traceback (most recent call last):
+  File "/Users/cuixianyun/PycharmProjects/NLG/src/predicate.py", line 66, in <module>
+    samples = PadBatchSeq(model.vocab.pad_id)(test_data)
+  File "/Users/cuixianyun/PycharmProjects/NLG/src/model/dataset.py", line 70, in __call__
+    res['post_len'] = torch.LongTensor([i['post_len'] for i in batch])
+  File "/Users/cuixianyun/PycharmProjects/NLG/src/model/dataset.py", line 70, in <listcomp>
+    res['post_len'] = torch.LongTensor([i['post_len'] for i in batch])
+TypeError: list indices must be integers or slices, not str
+
+[2021-09-05 14:51:14,395][4443592128][dataset.py][line: 30][INFO] >> reading data from ['/Users/cuixianyun/PycharmProjects/NLG/src/../data/toy_train.txt']
+[2021-09-05 14:51:14,485][4443592128][dataset.py][line: 40][INFO] >> 10000 data record loaded
+[2021-09-05 14:51:14,485][4443592128][dataset.py][line: 30][INFO] >> reading data from ['/Users/cuixianyun/PycharmProjects/NLG/src/../data/toy_valid.txt']
+[2021-09-05 14:51:14,501][4443592128][dataset.py][line: 40][INFO] >> 2000 data record loaded
+[2021-09-05 14:51:14,501][4443592128][predicate.py][line: 45][INFO] >> Building models
+[2021-09-05 14:51:15,507][4443592128][predicate.py][line: 54][INFO] >> Weights loading from /Users/cuixianyun/PycharmProjects/NLG/src/../train/model-12.ckpt
+[2021-09-05 14:51:16,243][4443592128][predicate.py][line: 79][ERROR] >> Traceback (most recent call last):
+  File "/Users/cuixianyun/PycharmProjects/NLG/src/predicate.py", line 68, in <module>
+    samples = PadBatchSeq(model.vocab.pad_id)(test_data)
+  File "/Users/cuixianyun/PycharmProjects/NLG/src/model/dataset.py", line 75, in __call__
+    res['resp'] = torch.LongTensor([i['resp'] + [self.pad_id] * (resp_max_len - len(i['resp'])) for i in batch])
+  File "/Users/cuixianyun/PycharmProjects/NLG/src/model/dataset.py", line 75, in <listcomp>
+    res['resp'] = torch.LongTensor([i['resp'] + [self.pad_id] * (resp_max_len - len(i['resp'])) for i in batch])
+TypeError: can only concatenate str (not "list") to str
+
+[2021-09-05 14:51:55,276][4548797888][dataset.py][line: 30][INFO] >> reading data from ['/Users/cuixianyun/PycharmProjects/NLG/src/../data/toy_train.txt']
+[2021-09-05 14:51:55,373][4548797888][dataset.py][line: 40][INFO] >> 10000 data record loaded
+[2021-09-05 14:51:55,374][4548797888][dataset.py][line: 30][INFO] >> reading data from ['/Users/cuixianyun/PycharmProjects/NLG/src/../data/toy_valid.txt']
+[2021-09-05 14:51:55,401][4548797888][dataset.py][line: 40][INFO] >> 2000 data record loaded
+[2021-09-05 14:51:55,401][4548797888][predicate.py][line: 45][INFO] >> Building models
+[2021-09-05 14:51:56,283][4548797888][predicate.py][line: 54][INFO] >> Weights loading from /Users/cuixianyun/PycharmProjects/NLG/src/../train/model-12.ckpt
+[2021-09-05 14:51:57,562][4548797888][predicate.py][line: 74][INFO] >> {'post': {'post': [2, 2], 'post_len': 2, 'resp': [], 'resp_len': 0}, 'pred': '我也是'}
+[2021-09-05 14:52:59,899][4648093120][dataset.py][line: 30][INFO] >> reading data from ['/Users/cuixianyun/PycharmProjects/NLG/src/../data/toy_train.txt']
+[2021-09-05 14:53:00,059][4648093120][dataset.py][line: 40][INFO] >> 10000 data record loaded
+[2021-09-05 14:53:00,060][4648093120][dataset.py][line: 30][INFO] >> reading data from ['/Users/cuixianyun/PycharmProjects/NLG/src/../data/toy_valid.txt']
+[2021-09-05 14:53:00,089][4648093120][dataset.py][line: 40][INFO] >> 2000 data record loaded
+[2021-09-05 14:53:00,089][4648093120][predicate.py][line: 45][INFO] >> Building models
+[2021-09-05 14:53:01,043][4648093120][predicate.py][line: 54][INFO] >> Weights loading from /Users/cuixianyun/PycharmProjects/NLG/src/../train/model-12.ckpt
+[2021-09-05 14:54:49,293][4648093120][predicate.py][line: 73][INFO] >> {'post': {'post': [2, 2], 'post_len': 2, 'resp': [], 'resp_len': 0}, 'pred': '我也是'}
+[2021-09-05 14:55:16,763][4588471744][dataset.py][line: 30][INFO] >> reading data from ['/Users/cuixianyun/PycharmProjects/NLG/src/../data/toy_train.txt']
+[2021-09-05 14:55:16,884][4588471744][dataset.py][line: 40][INFO] >> 10000 data record loaded
+[2021-09-05 14:55:16,885][4588471744][dataset.py][line: 30][INFO] >> reading data from ['/Users/cuixianyun/PycharmProjects/NLG/src/../data/toy_valid.txt']
+[2021-09-05 14:55:16,909][4588471744][dataset.py][line: 40][INFO] >> 2000 data record loaded
+[2021-09-05 14:55:16,909][4588471744][predicate.py][line: 45][INFO] >> Building models
+[2021-09-05 14:55:17,784][4588471744][predicate.py][line: 54][INFO] >> Weights loading from /Users/cuixianyun/PycharmProjects/NLG/src/../train/model-12.ckpt
+[2021-09-05 14:55:41,453][4588471744][predicate.py][line: 78][ERROR] >> Traceback (most recent call last):
+  File "/Users/cuixianyun/PycharmProjects/NLG/src/predicate.py", line 63, in <module>
+    resp = []
+  File "/Users/cuixianyun/PycharmProjects/NLG/src/predicate.py", line 63, in <module>
+    resp = []
+  File "/Applications/PyCharm CE.app/Contents/plugins/python-ce/helpers/pydev/_pydevd_bundle/pydevd_trace_dispatch.py", line 59, in trace_dispatch
+    return _trace_dispatch(py_db, frame, event, arg)
+  File "_pydevd_bundle/pydevd_cython_darwin_37_64.pyx", line 1210, in _pydevd_bundle.pydevd_cython_darwin_37_64.trace_dispatch
+  File "_pydevd_bundle/pydevd_cython_darwin_37_64.pyx", line 1470, in _pydevd_bundle.pydevd_cython_darwin_37_64.ThreadTracer.__call__
+  File "_pydevd_bundle/pydevd_cython_darwin_37_64.pyx", line 976, in _pydevd_bundle.pydevd_cython_darwin_37_64.PyDBFrame.trace_dispatch
+  File "_pydevd_bundle/pydevd_cython_darwin_37_64.pyx", line 938, in _pydevd_bundle.pydevd_cython_darwin_37_64.PyDBFrame.trace_dispatch
+  File "_pydevd_bundle/pydevd_cython_darwin_37_64.pyx", line 288, in _pydevd_bundle.pydevd_cython_darwin_37_64.PyDBFrame.do_wait_suspend
+  File "/Applications/PyCharm CE.app/Contents/plugins/python-ce/helpers/pydev/pydevd.py", line 1099, in do_wait_suspend
+    self._do_wait_suspend(thread, frame, event, arg, suspend_type, from_this_thread)
+  File "/Applications/PyCharm CE.app/Contents/plugins/python-ce/helpers/pydev/pydevd.py", line 1114, in _do_wait_suspend
+    time.sleep(0.01)
+KeyboardInterrupt
+
+[2021-09-05 14:55:51,173][4588537280][dataset.py][line: 30][INFO] >> reading data from ['/Users/cuixianyun/PycharmProjects/NLG/src/../data/toy_train.txt']
+[2021-09-05 14:56:36,419][4588537280][predicate.py][line: 41][ERROR] >> Traceback (most recent call last):
+  File "/Users/cuixianyun/PycharmProjects/NLG/src/predicate.py", line 41, in <module>
+    vocab, logger, config.max_seq_len - 1)
+  File "/Users/cuixianyun/PycharmProjects/NLG/src/model/dataset.py", line 26, in __init__
+    self.data = DialogDataset.make_dataset(paths, vocab, logger, max_lengths)
+  File "/Users/cuixianyun/PycharmProjects/NLG/src/model/dataset.py", line 38, in make_dataset
+    dataset.append([vocab.string2ids(' '.join(line[0].replace(' ', '')))[:max_lengths],
+  File "/Users/cuixianyun/PycharmProjects/NLG/src/model/text.py", line 73, in string2ids
+    return ids
+  File "_pydevd_bundle/pydevd_cython_darwin_37_64.pyx", line 1060, in _pydevd_bundle.pydevd_cython_darwin_37_64.SafeCallWrapper.__call__
+  File "_pydevd_bundle/pydevd_cython_darwin_37_64.pyx", line 566, in _pydevd_bundle.pydevd_cython_darwin_37_64.PyDBFrame.trace_dispatch
+  File "_pydevd_bundle/pydevd_cython_darwin_37_64.pyx", line 976, in _pydevd_bundle.pydevd_cython_darwin_37_64.PyDBFrame.trace_dispatch
+  File "_pydevd_bundle/pydevd_cython_darwin_37_64.pyx", line 969, in _pydevd_bundle.pydevd_cython_darwin_37_64.PyDBFrame.trace_dispatch
+  File "_pydevd_bundle/pydevd_cython_darwin_37_64.pyx", line 288, in _pydevd_bundle.pydevd_cython_darwin_37_64.PyDBFrame.do_wait_suspend
+  File "/Applications/PyCharm CE.app/Contents/plugins/python-ce/helpers/pydev/pydevd.py", line 1099, in do_wait_suspend
+    self._do_wait_suspend(thread, frame, event, arg, suspend_type, from_this_thread)
+  File "/Applications/PyCharm CE.app/Contents/plugins/python-ce/helpers/pydev/pydevd.py", line 1114, in _do_wait_suspend
+    time.sleep(0.01)
+KeyboardInterrupt
+
+[2021-09-05 14:57:30,202][4777088448][dataset.py][line: 30][INFO] >> reading data from ['/Users/cuixianyun/PycharmProjects/NLG/src/../data/toy_train.txt']
+[2021-09-05 14:57:46,749][4777088448][predicate.py][line: 79][ERROR] >> Traceback (most recent call last):
+  File "/Users/cuixianyun/PycharmProjects/NLG/src/predicate.py", line 41, in <module>
+    vocab, logger, config.max_seq_len - 1)
+  File "/Users/cuixianyun/PycharmProjects/NLG/src/model/dataset.py", line 26, in __init__
+    self.data = DialogDataset.make_dataset(paths, vocab, logger, max_lengths)
+  File "/Users/cuixianyun/PycharmProjects/NLG/src/model/dataset.py", line 38, in make_dataset
+    dataset.append([vocab.string2ids(' '.join(line[0].replace(' ', '')))[:max_lengths],
+  File "/Users/cuixianyun/PycharmProjects/NLG/src/model/text.py", line 72, in string2ids
+    ids = [self.token2id[t] for t in tokens if t in self.token2id]
+  File "/Users/cuixianyun/PycharmProjects/NLG/src/model/text.py", line 72, in string2ids
+    ids = [self.token2id[t] for t in tokens if t in self.token2id]
+  File "_pydevd_bundle/pydevd_cython_darwin_37_64.pyx", line 1470, in _pydevd_bundle.pydevd_cython_darwin_37_64.ThreadTracer.__call__
+  File "_pydevd_bundle/pydevd_cython_darwin_37_64.pyx", line 855, in _pydevd_bundle.pydevd_cython_darwin_37_64.PyDBFrame.trace_dispatch
+  File "_pydevd_bundle/pydevd_cython_darwin_37_64.pyx", line 846, in _pydevd_bundle.pydevd_cython_darwin_37_64.PyDBFrame.trace_dispatch
+  File "_pydevd_bundle/pydevd_cython_darwin_37_64.pyx", line 288, in _pydevd_bundle.pydevd_cython_darwin_37_64.PyDBFrame.do_wait_suspend
+  File "/Applications/PyCharm CE.app/Contents/plugins/python-ce/helpers/pydev/pydevd.py", line 1099, in do_wait_suspend
+    self._do_wait_suspend(thread, frame, event, arg, suspend_type, from_this_thread)
+  File "/Applications/PyCharm CE.app/Contents/plugins/python-ce/helpers/pydev/pydevd.py", line 1114, in _do_wait_suspend
+    time.sleep(0.01)
+KeyboardInterrupt
+
+[2021-09-05 14:58:00,145][4383303104][predicate.py][line: 40][INFO] >> Building models
+[2021-09-05 14:58:01,091][4383303104][predicate.py][line: 49][INFO] >> Weights loading from /Users/cuixianyun/PycharmProjects/NLG/src/../train/model-12.ckpt
+[2021-09-05 14:58:14,924][4383303104][predicate.py][line: 74][ERROR] >> Traceback (most recent call last):
+  File "/Users/cuixianyun/PycharmProjects/NLG/src/predicate.py", line 58, in <module>
+    post = [vocab.eos_id] + vocab.string2ids(text) + [vocab.eos_id]
+  File "/Users/cuixianyun/PycharmProjects/NLG/src/predicate.py", line 58, in <module>
+    post = [vocab.eos_id] + vocab.string2ids(text) + [vocab.eos_id]
+  File "_pydevd_bundle/pydevd_cython_darwin_37_64.pyx", line 1060, in _pydevd_bundle.pydevd_cython_darwin_37_64.SafeCallWrapper.__call__
+  File "_pydevd_bundle/pydevd_cython_darwin_37_64.pyx", line 566, in _pydevd_bundle.pydevd_cython_darwin_37_64.PyDBFrame.trace_dispatch
+  File "_pydevd_bundle/pydevd_cython_darwin_37_64.pyx", line 976, in _pydevd_bundle.pydevd_cython_darwin_37_64.PyDBFrame.trace_dispatch
+  File "_pydevd_bundle/pydevd_cython_darwin_37_64.pyx", line 938, in _pydevd_bundle.pydevd_cython_darwin_37_64.PyDBFrame.trace_dispatch
+  File "_pydevd_bundle/pydevd_cython_darwin_37_64.pyx", line 288, in _pydevd_bundle.pydevd_cython_darwin_37_64.PyDBFrame.do_wait_suspend
+  File "/Applications/PyCharm CE.app/Contents/plugins/python-ce/helpers/pydev/pydevd.py", line 1099, in do_wait_suspend
+    self._do_wait_suspend(thread, frame, event, arg, suspend_type, from_this_thread)
+  File "/Applications/PyCharm CE.app/Contents/plugins/python-ce/helpers/pydev/pydevd.py", line 1114, in _do_wait_suspend
+    time.sleep(0.01)
+KeyboardInterrupt
+
+[2021-09-05 14:58:27,118][4432455104][predicate.py][line: 40][INFO] >> Building models
+[2021-09-05 14:58:27,996][4432455104][predicate.py][line: 49][INFO] >> Weights loading from /Users/cuixianyun/PycharmProjects/NLG/src/../train/model-12.ckpt
+[2021-09-05 15:02:17,709][4432455104][predicate.py][line: 68][INFO] >> {'post': {'post': [2, 531, 10, 1911, 7, 235, 27, 521, 800, 5, 390, 224, 1226, 6, 2113, 134, 44, 91, 30, 2], 'post_len': 20, 'resp': [], 'resp_len': 0}, 'pred': '是的，我们一起去的'}
